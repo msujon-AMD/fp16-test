@@ -205,7 +205,7 @@ void getFlags(FILE **fpout, int argc, char **argv, enum print_table_option &prin
             {
                 ArgumentRangeCheck(i, argc);
                 int ns = atoi(argv[i+1]);
-                skip_non_normal = ns ? true : false;
+                skip_non_normal = ns ? false : true;
                 i++;
             }
             else if (!strcmp(argv[i], "--help"))
